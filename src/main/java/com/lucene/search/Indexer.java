@@ -17,6 +17,7 @@ import org.apache.lucene.util.Version;
 public class Indexer {
 	private IndexWriter writer;
 
+	@SuppressWarnings("deprecation")
 	public Indexer(String indexDirectoryPath) throws IOException {
 		// this directory will contain the indexes
 		Directory indexDirectory = FSDirectory.open(new File(indexDirectoryPath));

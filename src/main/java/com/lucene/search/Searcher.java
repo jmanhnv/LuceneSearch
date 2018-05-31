@@ -21,6 +21,7 @@ public class Searcher {
 	QueryParser queryParser;
 	Query query;
 
+	@SuppressWarnings("deprecation")
 	public Searcher(String indexDirectoryPath) throws IOException {
 		Directory indexDirectory = FSDirectory.open(new File(indexDirectoryPath));
 		indexSearcher = new IndexSearcher(indexDirectory);

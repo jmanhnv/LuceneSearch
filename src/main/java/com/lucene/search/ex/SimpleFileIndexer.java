@@ -27,6 +27,7 @@ public class SimpleFileIndexer implements LuceneConstants {
 
 	}
 
+	@SuppressWarnings("deprecation")
 	private int index(File indexDir, File dataDir, String suffix) throws Exception {
 
 		IndexWriter indexWriter = new IndexWriter(FSDirectory.open(indexDir), new SimpleAnalyzer(), true,

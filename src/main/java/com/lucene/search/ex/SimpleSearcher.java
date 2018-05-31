@@ -29,6 +29,7 @@ public class SimpleSearcher implements com.lucene.search.LuceneConstants {
 		searcher.searchIndex(indexDir, query, hits);
 	}
 
+	@SuppressWarnings({ "deprecation", "resource" })
 	private void searchIndex(File indexDir, String queryStr, int maxHits) throws Exception {
 
 		Directory directory = FSDirectory.open(indexDir);
