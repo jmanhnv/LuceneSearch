@@ -15,8 +15,8 @@ import com.lucene.search.LuceneConstants;
 public class SimpleFileIndexer implements LuceneConstants {
 	public static void main(String[] args) throws Exception {
 
-		File indexDir = new File("C:/LuceneTest/Index/");
-		File dataDir = new File("C:/LuceneTest/Data/");
+		File indexDir = new File("C:/lucene/index/");
+		File dataDir = new File("C:/lucene/data/");
 		String suffix = ".txt";
 
 		SimpleFileIndexer indexer = new SimpleFileIndexer();
